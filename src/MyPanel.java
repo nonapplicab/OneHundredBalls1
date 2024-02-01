@@ -1,11 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
 public class MyPanel extends JPanel {
-    Ball ballers []= new Ball[100];
+    Ball ballers []= new Ball[1];
 
     public MyPanel(){
         setSize(500,500);
-
         for(int i = 0; i< ballers.length;i++){
             ballers [i] = new Ball(this);
         }
@@ -18,12 +17,13 @@ public class MyPanel extends JPanel {
             ballers[i].draw(g);
             ballers[i].move(getWidth(),getHeight());
             try {
-                Thread.sleep(10);
+                Thread.sleep(100);
             }
             catch(InterruptedException e){
                 System.out.println("do the thing");
             }
-           repaint();
         }
+      
+           repaint();
     }
 }
