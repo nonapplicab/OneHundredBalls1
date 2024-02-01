@@ -8,5 +8,7 @@ public class Main {
         MyPanel panel = new MyPanel();
         frame.add(panel);
         frame.setVisible(true);
+        test.setColor(coolor);
+        tes.fillOval(xLocation,yLocation,size,size);
     }
 }
