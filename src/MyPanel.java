@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 public class MyPanel extends JPanel {
-    Ball ballers []= new Ball[3];
+    Ball ballers []= new Ball[20];
 
     public MyPanel(){
         setSize(250,250);
