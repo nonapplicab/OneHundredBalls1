@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 public class MyPanel extends JPanel {
-    Ball ballers []= new Ball[1];
+    Ball ballers []= new Ball[3];
 
     public MyPanel(){
         setSize(250,250);
@@ -20,7 +20,7 @@ public class MyPanel extends JPanel {
             ballers[i].move(getWidth(), getHeight(),this);
 
             try {
-                Thread.sleep(10);
+                Thread.sleep(20);
             } catch (InterruptedException e) {
                 System.out.println("do the thing");
             }

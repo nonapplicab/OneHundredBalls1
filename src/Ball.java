@@ -2,7 +2,7 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.Color;
 public class Ball {
-  private int size = (int)(Math.random() * 100) + 10;
+  private int size = (int)(Math.random() * 90) + 10;
   private Color coolor = new Color((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256));
   private int velocity = (int)((Math.random() - .5) * 100);
   private int drop = (int)((Math.random() - .5) * 100);;
@@ -41,6 +41,7 @@ public class Ball {
     g6.setColor(coolor);
     g6.fillOval(xLocation, yLocation, size, size);
   }
+
   private void doctor(JPanel w){
     if (xLocation + size > w.getWidth()) {
       xLocation = xLocation - size;
